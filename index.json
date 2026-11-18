@@ -1,3 +1,19 @@
 {
-  "versions": []
+  "versions": [
+    {
+      "version": "2.5.0",
+      "date": "2026-11-18",
+      "changes": "Update from GitHub: the Update page shows the installed version and the newest published version, lists every version in the public releases repository (DarrenS01/InvestTrackerApp_public) and lets you choose any of them, including an older one. You confirm first; your data is backed up, the file is downloaded and checked against its SHA-256, then installed and the program restarts. The packaged program takes the ready-made InvestTracker.exe when one is published (no Python needed) and otherwise builds from the source zip as before. A GitHub Actions workflow (.github/workflows/release.yml) builds the Windows exe and publishes it with the source zip and index.json when a version tag is pushed (needs the PUBLIC_REPO_TOKEN secret). Choosing a file on the Update page still works.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.5.0/InvestTracker.exe",
+        "sha256": "75cd3cc9c43ab9dc14e3a049702eeb6497c887c2598207e36abba9ac7c2ca714",
+        "size": 19104727
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.5.0/invest-tracker-2.5.0.zip",
+        "sha256": "f997d7e50bf63dfa44519312c98c4e67119437ba6363fc4aa26af921ac656f15",
+        "size": 432999
+      }
+    }
+  ]
 }
