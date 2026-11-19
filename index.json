@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.6.3",
+      "date": "2026-11-19",
+      "changes": "Accounts: Account ID is a column in each account row; the Done button is gone (changes save when you click out of a field, click the row again to close it); “Real cash today” and “Opening cash adjustment” are removed from investment accounts (existing adjustments are kept); Closed and Ignore in net worth are larger; the transaction count is at the far right of the edit bar. Layout: a leftover 1% column-width rule made tables stretch to full width and squeezed their last columns; tables are now as wide as their contents, centered, with roomier cells, and page side margins are about double the 2.6.1 width on wide screens. Market and Tax Data: the Start-up checks card is removed. Spending: new Search descriptions box in the filters (description, note and category). Fix: entries left on a deleted category (or any category no longer in the list) now become Uncategorized, so they can be filtered and appear in the Uncategorized card; learned merchants and built-in keywords for deleted categories are no longer used. Categories: new default list by group (Home, Food, Auto, Spending, Bills & Subscriptions, Travel, Health & Fitness, Financial, Income & Transfers, Other) with one name per category; a bank’s own wording for a category (Internet and phone, Dining, Gas, parking, and tolls…) is filed under the matching existing category instead of creating a second one, and categories already kept under two names are merged once (their entries move with them).",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.6.3/InvestTracker.exe",
+        "sha256": "f2b42ce14e51a0a22fb2ca332fdedac8b93a78f9ea004fd1fe689340b5bc874f",
+        "size": 19131086
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.6.3/invest-tracker-2.6.3.zip",
+        "sha256": "915974b2449fbfa6d25d96264bfb930a89ba3820b8443344b5bb4afe4893ff30",
+        "size": 458512
+      }
+    },
+    {
       "version": "2.6.2",
       "date": "2026-11-19",
       "changes": "Import: files can be loaded one by one, several at once, or a whole folder (only CSV/TXT files in it are read). Raw rows: every imported row is stored exactly as in the file (description, date, time, whole raw row); renaming or changing account type only changes how it is shown, and duplicates are found by comparing raw rows. Deleted assets and liabilities, and deleted accounts, are removed from history; past net worth is built from the Historic values table, which now also lists ignored accounts, and closed accounts show $0. Charts: month-to-date income is cumulative, income is hidden on 30 and 90 days, and 30/90 days are shown by week. Spending: choosing a category now asks each time whether to remember the merchant; category menus load only when a row is edited, and the list shows 300 rows at a time. Renamed accounts show their new name in selectors. Layout: tables are as wide as their contents and centered in the card, headers are left aligned, numbers/$/% are right aligned and other cells left aligned, and page side margins are 25% wider. Settings: Info sits just above Close.",
