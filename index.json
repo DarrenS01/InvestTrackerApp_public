@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.6.5",
+      "date": "2026-11-19",
+      "changes": "New modules: Rental property (CRA form T776) and Business (CRA form T2125), each with its own tab that can be hidden in Settings > Modules. Per property or business and tax year: income and expenses under the form's line numbers with what belongs on each line, personal-use portion, co-owner or partner share, motor vehicle costs at business km / total km (business parking in full, passenger-vehicle limits), capital assets with CCA by class (half-year rule, accelerated investment incentive, recapture, terminal loss, vehicles over the ceiling in class 10.1), rental CCA kept from creating a loss for all properties combined, short-term rental non-compliance, cost of goods sold with inventory, meals at 50%, business-use-of-home limited to business income with carry-forward, GST/HST collected and input tax credits, a review list like Cost base (missing kilometres or home %, large repairs that may be capital, undescribed other expenses), Add from Spending (copies chosen transactions; Spending is not changed) and a CSV of the form lines. No other page was changed.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.6.5/InvestTracker.exe",
+        "sha256": "8ca361234493b843890c829eef1ff9f30611d3921b39f790287d7c2ff10684ce",
+        "size": 19178573
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.6.5/invest-tracker-2.6.5.zip",
+        "sha256": "bc217fee421ea32cd8ca402ae8bbea8bff999e5865945b9ebfa1ea38b5e002df",
+        "size": 490333
+      }
+    },
+    {
       "version": "2.6.4",
       "date": "2026-11-19",
       "changes": "Tables: columns are aligned as a whole — number columns ($, %, amounts, number boxes) are right-aligned with their header, including “–” and “by hand”; text columns stay left. Sorting: click a column title to sort the Accounts tables (investment, chequing/savings, assets, liabilities) and the Transactions list; Spending transactions sort across all entries, not just the ones shown. Filters now sit inside the transaction table card, above the column they filter (month, search, account, type/category); the table title is inside the card. Overview: card titles removed; the net worth chart has its own row; holdings, assets and liabilities sit side by side in one card with their titles inside (on a phone each becomes its own card). Spending: the chart is full width; the pie chart sits beside one card holding By category and Average per month by group. Retirement: the My Account Values button (was Use my current balances & account settings) sits under Balance today and fills only that column — it no longer resets Return % to 5% or changes yearly additions; Added per year comes before Return %/yr; Dividend and Interest yield are columns on the Non-registered row.",
