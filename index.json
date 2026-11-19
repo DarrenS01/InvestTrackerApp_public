@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.6.4",
+      "date": "2026-11-19",
+      "changes": "Tables: columns are aligned as a whole — number columns ($, %, amounts, number boxes) are right-aligned with their header, including “–” and “by hand”; text columns stay left. Sorting: click a column title to sort the Accounts tables (investment, chequing/savings, assets, liabilities) and the Transactions list; Spending transactions sort across all entries, not just the ones shown. Filters now sit inside the transaction table card, above the column they filter (month, search, account, type/category); the table title is inside the card. Overview: card titles removed; the net worth chart has its own row; holdings, assets and liabilities sit side by side in one card with their titles inside (on a phone each becomes its own card). Spending: the chart is full width; the pie chart sits beside one card holding By category and Average per month by group. Retirement: the My Account Values button (was Use my current balances & account settings) sits under Balance today and fills only that column — it no longer resets Return % to 5% or changes yearly additions; Added per year comes before Return %/yr; Dividend and Interest yield are columns on the Non-registered row.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.6.4/InvestTracker.exe",
+        "sha256": "0ff8f718dfc4440def50ed0b01307ed9f0cb829dfabac9f76342a4a4db414bf8",
+        "size": 19134237
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.6.4/invest-tracker-2.6.4.zip",
+        "sha256": "f8967105175fd1fbf6008ae8e71d719c3de9ca0fd39aa09fb7ed2ba5408ac586",
+        "size": 462280
+      }
+    },
+    {
       "version": "2.6.3",
       "date": "2026-11-19",
       "changes": "Accounts: Account ID is a column in each account row; the Done button is gone (changes save when you click out of a field, click the row again to close it); “Real cash today” and “Opening cash adjustment” are removed from investment accounts (existing adjustments are kept); Closed and Ignore in net worth are larger; the transaction count is at the far right of the edit bar. Layout: a leftover 1% column-width rule made tables stretch to full width and squeezed their last columns; tables are now as wide as their contents, centered, with roomier cells, and page side margins are about double the 2.6.1 width on wide screens. Market and Tax Data: the Start-up checks card is removed. Spending: new Search descriptions box in the filters (description, note and category). Fix: entries left on a deleted category (or any category no longer in the list) now become Uncategorized, so they can be filtered and appear in the Uncategorized card; learned merchants and built-in keywords for deleted categories are no longer used. Categories: new default list by group (Home, Food, Auto, Spending, Bills & Subscriptions, Travel, Health & Fitness, Financial, Income & Transfers, Other) with one name per category; a bank’s own wording for a category (Internet and phone, Dining, Gas, parking, and tolls…) is filed under the matching existing category instead of creating a second one, and categories already kept under two names are merged once (their entries move with them).",
