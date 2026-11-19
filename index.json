@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.6.2",
+      "date": "2026-11-19",
+      "changes": "Import: files can be loaded one by one, several at once, or a whole folder (only CSV/TXT files in it are read). Raw rows: every imported row is stored exactly as in the file (description, date, time, whole raw row); renaming or changing account type only changes how it is shown, and duplicates are found by comparing raw rows. Deleted assets and liabilities, and deleted accounts, are removed from history; past net worth is built from the Historic values table, which now also lists ignored accounts, and closed accounts show $0. Charts: month-to-date income is cumulative, income is hidden on 30 and 90 days, and 30/90 days are shown by week. Spending: choosing a category now asks each time whether to remember the merchant; category menus load only when a row is edited, and the list shows 300 rows at a time. Renamed accounts show their new name in selectors. Layout: tables are as wide as their contents and centered in the card, headers are left aligned, numbers/$/% are right aligned and other cells left aligned, and page side margins are 25% wider. Settings: Info sits just above Close.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.6.2/InvestTracker.exe",
+        "sha256": "bd28e050eed2b22dde4dac5a2411e5a8c08d63097f2a0db9348490c0dfe3c1c9",
+        "size": 19127042
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.6.2/invest-tracker-2.6.2.zip",
+        "sha256": "9a2fdcd7ac702e9b0e2c0ebc3b49de9cce61f6cd5a7c393242b9735195c72932",
+        "size": 455454
+      }
+    },
+    {
       "version": "2.6.1",
       "date": "2026-11-19",
       "changes": "Fix: updating the packaged program no longer leaves a white, “Not Responding” window: the old copy now starts the new one fully detached and then ends itself, and the restart is written to tracker.log. Accounts: a chequing, savings, credit card or line-of-credit account can be changed to any of those types from its edit bar (its entries, remembered type and opening balance follow). An account with no transactions is removed automatically when another account has the same account ID (the empty twin left behind after reloading). Spending: the Uncategorized card counts every uncategorized transaction whatever the date range, and clicking it lists them all.",
