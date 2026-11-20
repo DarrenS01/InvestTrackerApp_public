@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.9.0",
+      "date": "2026-11-20",
+      "changes": "Taxes: one Tax year selector for every Taxes page, at the right of the sub-tabs (remembered between visits); page titles removed on the Taxes pages; an Import button (upload icon) in the top bar on every page. Contribution Room: RRSP contributions now come from the deposits into your RRSP accounts (like TFSA), checked against imported receipts (yellow when they disagree, editable); new Home Buyers' Plan section: tick RRSP withdrawals as HBP (or add one by hand), repayment schedule over 15 years (starting the second year after, or the fifth year for a first withdrawal from 2022 to 2028), minimum = balance / years left, designated repayments editable and taken off deductible contributions, shortfall shown as income on line 12900; Tax Summary shows lines 24600 and 12900. Import: the More options section is gone. Each bank or card file is worked out on its own (which amounts are money out, the kind of account, the bank's name) and the preview shows the guess with sample rows; you can change the account (existing or new), kind and sign per file before saving, and a file that could be read either way is marked Please check. A Wealthsimple statement asks which account it is from on the preview. Fixed the drop hint showing twice in the Import dialog.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.9.0/InvestTracker.exe",
+        "sha256": "20c26cd6f64b3f4146705a568d6e7631c2c78aeec2f537a88ecbb56eb168bc78",
+        "size": 19375291
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.9.0/invest-tracker-2.9.0.zip",
+        "sha256": "14b887a04817064a5f88d531921e2f8b2a7738d5ae4317fca182f983f00974ad",
+        "size": 638053
+      }
+    },
+    {
       "version": "2.8.0",
       "date": "2026-11-20",
       "changes": "Encryption at rest (Windows): your data is stored only encrypted (AES-256-GCM, using Windows' own cryptography), with a key that Windows keeps for your Windows sign-in, so a copy of the file can't be read on another computer or by another Windows account; nothing to type or remember. On first start the existing database is encrypted, checked, and the plain file overwritten and removed; older update backups are encrypted the same way. While Summit runs the data is decrypted only in memory and written back encrypted after every change. Settings > Data: shows whether your data is encrypted, Export protected backup (a file encrypted with a passphrase you choose, which opens on any computer) and Restore protected backup. If this Windows account can't unlock the data (new PC, reset profile) a page offers to restore a protected backup; the locked file is never changed. Settings > Security: optional Automatic backup to another location (USB drive, network or OneDrive folder), daily or weekly, keeping the newest 3, 5 or 10; the passphrase is never stored. Update backups: the 3 newest are kept (was 10). Tax documents: every box and the text of each slip are saved (boxes the app doesn't use yet too), with your SIN, name and address removed first; the PDF itself is not kept; unrecognised documents are kept as Other tax document. Older versions can't read the encrypted file: rolling back below this version shows an empty app until you update again (nothing is lost).",
