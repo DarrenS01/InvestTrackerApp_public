@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.7.0",
+      "date": "2026-11-20",
+      "changes": "Renamed to Summit, with a new icon (charcoal and gold mountains with a rising line) and a Charcoal and gold colour choice in Settings > Display; the program file and install folder keep their old names, and the Start menu shortcut no longer shows a SmartScreen warning after an update. Navigation: Overview, Accounts, Transactions (Investments and Spending), Taxes (Summary, Investments, Business, Rental, Contribution Room) and Calculators (Retirement, Mortgage, Margin); Market & Reference Data and Import files are in the top-right menu. One owner: Ownership, Spouse and Joint are gone; everything is yours with one cost base per security (accounts that were Joint or Spouse are listed once in Settings > Data); rental co-owner and business partner shares stay. Import anywhere: drop CSV exports or PDF tax documents on any page; T3, T5, T5008, T4FHSA, RRSP contribution receipts and Notices of Assessment are recognised and read (type can be changed on the preview, amounts corrected before saving; the same file is never saved twice). Investment Taxes (was Cost base & gains): Schedule 3 with each line number under its amount, line 4 detail with options listed separately in contracts and each sale opening to its cost base history, T3 box 21 to line 17400 and T5 box 18 to 17600, line 25300 from your Notice of Assessment, investment income for Schedule 4 (12000, 12010, 12100, 13000, foreign tax 40500, return of capital), carrying charges (22100) with margin interest by month, T1135 foreign property, and the cost base of what you still hold. Every amount is filled in (slips first, then transactions) and can be typed over: edited amounts are italic with a reset, and a cell turns yellow when the sources disagree (listed under Check these). Business Taxes and Rental Taxes lines can be typed over the same way. Written options: the premium is now a capital gain in the year the option is written; buying it back in a later year is a loss in that year. Exchange rates: missing USD rates are filled from the Bank of Canada (the day's rate, or the business day before, for trades; the annual average for dividends and interest once the year is over); rates you entered are never changed. New Contribution Room page (TFSA moved from Accounts; RRSP from your Notice of Assessment and receipts; FHSA from T4FHSA slips) and Tax Summary page (each page's result with its T1 line).",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.7.0/InvestTracker.exe",
+        "sha256": "b8345794159236164a1332c30f2a4c1d5984449b67816900f922ab1e914447ff",
+        "size": 19326767
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.7.0/invest-tracker-2.7.0.zip",
+        "sha256": "103ac693e3a9d41515848f26211cce61e6dab5117e1ba1fb690cff1c4a6a6d23",
+        "size": 606174
+      }
+    },
+    {
       "version": "2.6.5",
       "date": "2026-11-19",
       "changes": "New modules: Rental property (CRA form T776) and Business (CRA form T2125), each with its own tab that can be hidden in Settings > Modules. Per property or business and tax year: income and expenses under the form's line numbers with what belongs on each line, personal-use portion, co-owner or partner share, motor vehicle costs at business km / total km (business parking in full, passenger-vehicle limits), capital assets with CCA by class (half-year rule, accelerated investment incentive, recapture, terminal loss, vehicles over the ceiling in class 10.1), rental CCA kept from creating a loss for all properties combined, short-term rental non-compliance, cost of goods sold with inventory, meals at 50%, business-use-of-home limited to business income with carry-forward, GST/HST collected and input tax credits, a review list like Cost base (missing kilometres or home %, large repairs that may be capital, undescribed other expenses), Add from Spending (copies chosen transactions; Spending is not changed) and a CSV of the form lines. No other page was changed.",
