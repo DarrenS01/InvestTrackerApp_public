@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.10.0",
+      "date": "2026-11-20",
+      "changes": "Business and rental, linked to your accounts: an account can be marked Used for a business or rental property on the Accounts page (everything from it goes to that tax page); on mixed accounts, tag transactions with Tax use on Spending (one at a time or several at once), or make a rule (descriptions containing… -> business or property, label, share), applied to every import. One record: nothing is copied; entries copied from Spending before are turned into links once. Plain-words tax labels per kind (Rent, Damage or security deposit held, Property taxes, Sales or fees, Meals 50%, Owner draw, Capital purchase, Loan principal, Transfer…) with the T776/T2125 line shown; labels guessed from the spending category until you confirm; Personal takes a transaction off the forms; a business or rental share % for mixed-use costs. GST/HST: choose the rate a registered business charges; sales and taxable purchases are split into the amount and the GST/HST; a separate label for remittances and refunds. Tax pages list the linked bank and card transactions with editable labels, and Rental shows deposits held. Spending: business and rental transactions are left out of spending totals by default (Settings > Modules to include them); coloured tags and a Tax use filter. Overview: business and rental this year so far. All of this appears only for businesses or properties you have, and not for a module you turned off unless it has data.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.10.0/InvestTracker.exe",
+        "sha256": "adc37f69563bf704d1dfd1a402b626de891d3dee7c43460cdf67c82eb96fe807",
+        "size": 19397805
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.10.0/invest-tracker-2.10.0.zip",
+        "sha256": "2982a537dc2e250f9ac735dc6523f64ecd351136cf239822cd7fbcfc52174816",
+        "size": 655867
+      }
+    },
+    {
       "version": "2.9.0",
       "date": "2026-11-20",
       "changes": "Taxes: one Tax year selector for every Taxes page, at the right of the sub-tabs (remembered between visits); page titles removed on the Taxes pages; an Import button (upload icon) in the top bar on every page. Contribution Room: RRSP contributions now come from the deposits into your RRSP accounts (like TFSA), checked against imported receipts (yellow when they disagree, editable); new Home Buyers' Plan section: tick RRSP withdrawals as HBP (or add one by hand), repayment schedule over 15 years (starting the second year after, or the fifth year for a first withdrawal from 2022 to 2028), minimum = balance / years left, designated repayments editable and taken off deductible contributions, shortfall shown as income on line 12900; Tax Summary shows lines 24600 and 12900. Import: the More options section is gone. Each bank or card file is worked out on its own (which amounts are money out, the kind of account, the bank's name) and the preview shows the guess with sample rows; you can change the account (existing or new), kind and sign per file before saving, and a file that could be read either way is marked Please check. A Wealthsimple statement asks which account it is from on the preview. Fixed the drop hint showing twice in the Import dialog.",
