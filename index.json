@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.11.0",
+      "date": "2026-11-20",
+      "changes": "Profiles: keep separate sets of data on one computer (two people, or your personal books and a corporation's). Each profile has its own accounts, transactions, settings, PIN and encrypted data file; if there is more than one, Summit asks which to open at start-up, and the top-right menu has Switch profile. A profile is named by its User Info (your name, or the company name for a corporation) and renamed when you change it. Settings > Data > Delete this profile permanently deletes the open profile (Delete account is gone). Corporation profiles (a one-owner Canadian-controlled private corporation such as a professional corporation or a contracting company, any province or territory): Taxes gets T2 Summary (net income for tax with Schedule 1, taxable income, small business deduction with the passive-income grind, federal and provincial tax at 2025 and 2026 rates prorated for mid-year changes, Part IV tax, refundable tax and the dividend refund, NERDTOH, ERDTOH, capital dividend account, GRIP, losses carried forward, instalments and balance owing), Income Statement (GIFI 125, from the corporation's labelled bank and card transactions), Balance Sheet (GIFI 100) and GST/HST (by annual, quarterly or monthly period); a new Company tab has Owner Pay (salary with T4 boxes, eligible, other and capital dividends with T5 boxes, shareholder loan with a one-year repayment warning) and Corporate Info (province, BN, GST/HST rate, opening balances). Personal-only pages are hidden in a corporation profile. Update backups are made only for profiles whose data changed since their last backup, plus before Clear data. Settings > Modules: Overview chart default view (timeframe, dollars or % change, everything or net worth only; or the last used).",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.11.0/InvestTracker.exe",
+        "sha256": "cd595fb57f908778a316a7081f7a3f86ab6fd5140b7513541e0315a8de4f87ce",
+        "size": 19441606
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.11.0/invest-tracker-2.11.0.zip",
+        "sha256": "29f75d450d35e78c9ead38cf80603b3c0a1a1ce6551d0382be77c0f1a361dc4f",
+        "size": 684172
+      }
+    },
+    {
       "version": "2.10.0",
       "date": "2026-11-20",
       "changes": "Business and rental, linked to your accounts: an account can be marked Used for a business or rental property on the Accounts page (everything from it goes to that tax page); on mixed accounts, tag transactions with Tax use on Spending (one at a time or several at once), or make a rule (descriptions containing… -> business or property, label, share), applied to every import. One record: nothing is copied; entries copied from Spending before are turned into links once. Plain-words tax labels per kind (Rent, Damage or security deposit held, Property taxes, Sales or fees, Meals 50%, Owner draw, Capital purchase, Loan principal, Transfer…) with the T776/T2125 line shown; labels guessed from the spending category until you confirm; Personal takes a transaction off the forms; a business or rental share % for mixed-use costs. GST/HST: choose the rate a registered business charges; sales and taxable purchases are split into the amount and the GST/HST; a separate label for remittances and refunds. Tax pages list the linked bank and card transactions with editable labels, and Rental shows deposits held. Spending: business and rental transactions are left out of spending totals by default (Settings > Modules to include them); coloured tags and a Tax use filter. Overview: business and rental this year so far. All of this appears only for businesses or properties you have, and not for a module you turned off unless it has data.",
