@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.16.0",
+      "date": "2026-11-21",
+      "changes": "Taxes > Investments, per the CRA's timing rules: only distributions from funds, ETFs, trusts and REITs move to the year of their record date; dividends from companies count in the year they are paid. Sales count in the year they settle (a December 31 trade settling in January is next year's), using Wealthsimple's settlement date. Margin interest: choose whether each charge counts on the date it was charged (the default) or for the month it covers (charged on the 1st for last month); the CRA accepts either if you use the same one every year.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.16.0/InvestTracker.exe",
+        "sha256": "b612b7fd3d2d96f466756fb11a66f57d1d01470180eeb6b07fe0a08487203c7e",
+        "size": 19483718
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.16.0/invest-tracker-2.16.0.zip",
+        "sha256": "abba9fa2485aca7b924c02528342ed1572002ae01f396ce06463ffe9137bef5a",
+        "size": 722620
+      }
+    },
+    {
       "version": "2.15.0",
       "date": "2026-11-21",
       "changes": "Overview works without investments: net worth, Assets and Liabilities, and a net worth chart built from bank and card balances. Profiles: the lock screen has Switch profile; Forgot PIN asks for the date of birth saved in the profile (the name is not accepted, wrong answers count like wrong PINs); date of birth is now required in User Info (the owner's for a corporation). Tax documents: User Info has an optional Last 3 digits of your SIN; a slip whose SIN ends differently is flagged as possibly someone else's and set to Don't save. T5013, T4RSP, T4RIF, T4A, NR4, T4 and T4E are recognised with every box saved; T5013 amounts count on Taxes > Investments (capital gains, interest, dividends, foreign income and tax, carrying charges, return of capital) and a T4RSP's Home Buyers' Plan withdrawal (box 27) is checked against your HBP. Taxes > Investments: distributions paid in January but on record in December (for example VEQT's year-end distribution) count in the record date's year, with the return of capital and non-cash distribution posted with them; interest from personal bank accounts counts as investment income; T3 foreign income (box 25) is added to both sides of the interest check. Settings shows only the message from what you just did, not the page's own warnings.",
