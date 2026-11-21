@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.13.0",
+      "date": "2026-11-21",
+      "changes": "Uninstall (Settings > Apps > Summit > Uninstall) is one question: it closes Summit if it is open and removes everything it created on this computer: the program, every profile and its data, settings, update backups, the Start menu and desktop shortcuts and the Apps entry. Protected backups you saved elsewhere (and your automatic backup folder) are not touched. Everything Summit keeps is now in its own program folder (%LOCALAPPDATA%\\Programs\\Investment Tracker): it no longer creates %APPDATA%\\InvestTracker (data on a read-only install, the install question's answer) or %LOCALAPPDATA%\\InvestTracker (update build files); folders made by older versions are moved in or removed at start-up. Pages still open if the data file can't be read.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.13.0/InvestTracker.exe",
+        "sha256": "d8a66aaa93dc697ccf42bef012e5e98ca57582e2456be06289060586aa595872",
+        "size": 19460365
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.13.0/invest-tracker-2.13.0.zip",
+        "sha256": "270c166e7cd6b3e5c21e28dbffb878f835e066a76053dae73f76fa53d6c725c4",
+        "size": 706672
+      }
+    },
+    {
       "version": "2.12.0",
       "date": "2026-11-21",
       "changes": "Tax documents: nothing is kept from an uploaded document except its figures: the PDF is held in memory only until you save (never written to disk) and its text is no longer stored, so no personal details are kept; documents imported before are read again with the improved reader and their stored text deleted. Notices of Assessment: every figure is now read (the CRA prints amounts without a $ sign): the summary lines (15000, 23600, 26000, 42000, 43500, 43700 and others), refund or balance owing, next year's RRSP deduction limit and available room, pension adjustment, next year's FHSA room and the Canada training credit limit; Contribution Room uses the FHSA room from the notice. TFSA transactions statements (Wealthsimple and others) are recognised: each contribution and withdrawal is read and used for your TFSA room (marked 'statement', yellow when your transactions differ). Wealthsimple T5008 slips laid out as a table of trades are read (each trade, totals in boxes 16, 20 and 21); Canadian ShareOwner shown as the issuer of its T3 slips. Taxes > Investments: click an imported slip to see everything read from it (every box with its description, the Notice of Assessment lines, RRSP receipt periods, TFSA statement entries, T5008 trades). Import: drop files or folders anywhere in Summit and the preview opens straight away (a 'Drop to import' box shows while dragging); the Import window has one drop area for files and folders together, a Choose files button, and a list you can add to and remove from before importing; Import files is gone from the menu (use the upload icon in the top bar). Business and rental: better starting tax labels: an e-transfer from someone else is rent or sales (not a transfer between your accounts), damage deposits and deposit refunds, laundry income, owner draws and contributions, card payments, GST/HST remittances, and common payees (office supplies, courier, software, coworking rent, travel, meals, insurance, utilities, property tax, repairs, snow removal and lawn care, advertising); returns are no longer counted as sales and a replacement or renovation is guessed as a capital purchase. Sample statements for trying business and rental features are in sample_data/rental_business_test.",
