@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.21.0",
+      "date": "2026-11-21",
+      "changes": "Fixed: importing TD Mutual Funds statements for a second account put everything in one account and renamed it (and could pick an account you made by hand); each statement now goes to its own account, and a one-time repair moves rows filed by 2.19 or 2.20 back to the right accounts. TD holdings with shortened fund names now match their funds. Fixed: opening Summit right after closing it could hang (the last window's helpers were still finishing); it now waits for them, ends leftovers or uses a spare window folder. A file that can't be read is reported instead of stopping the import, misprinted dates are skipped, and absurd numbers typed in forms are ignored.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.21.0/InvestTracker.exe",
+        "sha256": "4115142dedff635eef453658935fa8cccdbfc9861bbe6cff7116faa5393ddd62",
+        "size": 20221662
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.21.0/invest-tracker-2.21.0.zip",
+        "sha256": "5c99dfd66c082d3e1c26e1a9ad5e57a21fef42ae6c11c25ca9df66c43c768b1c",
+        "size": 1221001
+      }
+    },
+    {
       "version": "2.20.0",
       "date": "2026-11-21",
       "changes": "Monte Carlo runs several times faster with the same results: each year's withdrawal is found in about 5 tax calculations instead of 26, tax already worked out is reused, and the market histories are split across every processor core but one (it falls back to one core if a computer blocks this). TD Mutual Funds statements in the older (2016) layout are read too; fund switches, redemptions and transfers between funds are imported, and an activity Summit doesn't know is reported instead of skipped.",
