@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.17.0",
+      "date": "2026-11-21",
+      "changes": "Hang recorder: if Summit freezes or is slow to start, the log notes each startup step and where the program is stuck (page names and program lines only: no figures, names, accounts, searches or addresses; your Windows user folder shows as %USERPROFILE%). Import: the CRA's My Account \"List of all slips\" PDF is split into one slip each (T4, T5, T5008, T3, RRSP receipt, TFSA records, T4FHSA and more) and checked against slips you already saved: identical ones aren't saved twice, different figures are listed. Questrade monthly statement PDFs (also zipped), the Activities download (Excel) and trade confirmations (CSV) are read without duplicating each other, whatever order you import them; month-end holdings on statements are checked against Summit's units. Tables keep the column you sorted by after saving, filtering or reopening.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.17.0/InvestTracker.exe",
+        "sha256": "033ed30b220748034f05f74bddb70f19cad42673f5daa68ceb1bc16aa7e04787",
+        "size": 19522712
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.17.0/invest-tracker-2.17.0.zip",
+        "sha256": "e8f9854f13b6221b689f6c2941de3e8d89b5b9cc5adf6c0c443f4f8cc488a8ea",
+        "size": 723869
+      }
+    },
+    {
       "version": "2.16.0",
       "date": "2026-11-21",
       "changes": "Taxes > Investments, per the CRA's timing rules: only distributions from funds, ETFs, trusts and REITs move to the year of their record date; dividends from companies count in the year they are paid. Sales count in the year they settle (a December 31 trade settling in January is next year's), using Wealthsimple's settlement date. Margin interest: choose whether each charge counts on the date it was charged (the default) or for the month it covers (charged on the 1st for last month); the CRA accepts either if you use the same one every year.",
