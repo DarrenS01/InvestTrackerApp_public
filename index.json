@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.20.0",
+      "date": "2026-11-21",
+      "changes": "Monte Carlo runs several times faster with the same results: each year's withdrawal is found in about 5 tax calculations instead of 26, tax already worked out is reused, and the market histories are split across every processor core but one (it falls back to one core if a computer blocks this). TD Mutual Funds statements in the older (2016) layout are read too; fund switches, redemptions and transfers between funds are imported, and an activity Summit doesn't know is reported instead of skipped.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.20.0/InvestTracker.exe",
+        "sha256": "3e9cc1570b195f3997779f763393b09966170bf8b038b667ed27b8e4d596588a",
+        "size": 20213041
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.20.0/invest-tracker-2.20.0.zip",
+        "sha256": "3b909ba7d2ab63d3655978e16bb32b6edf8f4b280b7aa1ecfcaeeb535f267662",
+        "size": 1216955
+      }
+    },
+    {
       "version": "2.19.0",
       "date": "2026-11-21",
       "changes": "TD Mutual Funds quarterly statements (PDF) import as the account's history: contributions, fund purchases and reinvested distributions with their real dates (so the 60-day RRSP rule applies by date), the units held before the first statement taken from its holdings, and no duplicates whatever order you import them; they are no longer read as RRSP receipts. RRSP receipts for the same amount on different dates are no longer treated as duplicates. Retirement: the input cards open one at a time from a row of titles; the margin loan is a row in Today's balances (My Account Values fills it too); Enforce RRIF minimums sits in the RRSP row; CPP, OAS and other income side by side. Mortgage: the regular payment is worked out as you type (type your own to override it), extra payments on their own row with the extra as a % of the payment and lump sums as a % of the original mortgage. Margin: the interest calculator shows day, month and year in one row. Updates never offer versions before 2.18.0.",
