@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.14.0",
+      "date": "2026-11-21",
+      "changes": "Business and rental transactions on Spending: the Category column is now the tax form line, with only that form's lines (income lines for money in, expense lines for money out) and Transfer, Owner draw, Capital purchase, Loan principal, GST/HST and the new Ignore (not on the tax form); guesses show in italics until you confirm them (or tick rows and use Tax use > Confirm the guessed tax lines). Add your own labels (for example Snow removal) under a form line from the same menu; they also appear on Taxes > Business and Rental. Spending shows months that only have business or rental transactions. PIN: every profile now needs a 4-digit PIN (Settings opens on Security until one is created; it can be changed, not removed). Settings > Data has two delete options, Delete all transactions and Delete this profile, each confirmed in a window with your PIN (no more typing DELETE; Delete all data is gone); Forgot PIN deletes only that profile's data after a confirmation. Import: a file with only column headings (a year with no activity) shows as an empty file and is skipped, not an error; files from a folder show their subfolder and are listed in order; Wealthsimple chequing and credit card exports are named Wealthsimple. Which way amounts go is decided by the rows' own types when a file has them (withdrawals negative and deposits positive, or the reverse), and the preview's sample always shows money in and money out. A statement with a Balance column sets the account's opening balance so Summit's balance matches the bank's (only while the opening balance is 0). Overview: with one line on the chart, the y-axis fits that line instead of starting at $0. Pages no longer have a title and description at the top; the Import button on the Transactions pages is gone (use the upload icon or drop files anywhere). The Profiles page is shorter. Date of birth accepts only a real date with a 4-digit year from 1900 to today, and every date field is limited to 4-digit years. Running the program from Downloads no longer creates a data folder there unless you choose to run it from there.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.14.0/InvestTracker.exe",
+        "sha256": "7f066a9008486c0a9d9d411ec8277486350edac5e22e0ad46a4ff996cc2abb5e",
+        "size": 19473140
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.14.0/invest-tracker-2.14.0.zip",
+        "sha256": "289836e587a0205cbc1ea0e2fa58f00aebf95246698336170f8ceb9c29f6e963",
+        "size": 714241
+      }
+    },
+    {
       "version": "2.13.0",
       "date": "2026-11-21",
       "changes": "Uninstall (Settings > Apps > Summit > Uninstall) is one question: it closes Summit if it is open and removes everything it created on this computer: the program, every profile and its data, settings, update backups, the Start menu and desktop shortcuts and the Apps entry. Protected backups you saved elsewhere (and your automatic backup folder) are not touched. Everything Summit keeps is now in its own program folder (%LOCALAPPDATA%\\Programs\\Investment Tracker): it no longer creates %APPDATA%\\InvestTracker (data on a read-only install, the install question's answer) or %LOCALAPPDATA%\\InvestTracker (update build files); folders made by older versions are moved in or removed at start-up. Pages still open if the data file can't be read.",
