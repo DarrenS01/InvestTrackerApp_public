@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.19.0",
+      "date": "2026-11-21",
+      "changes": "TD Mutual Funds quarterly statements (PDF) import as the account's history: contributions, fund purchases and reinvested distributions with their real dates (so the 60-day RRSP rule applies by date), the units held before the first statement taken from its holdings, and no duplicates whatever order you import them; they are no longer read as RRSP receipts. RRSP receipts for the same amount on different dates are no longer treated as duplicates. Retirement: the input cards open one at a time from a row of titles; the margin loan is a row in Today's balances (My Account Values fills it too); Enforce RRIF minimums sits in the RRSP row; CPP, OAS and other income side by side. Mortgage: the regular payment is worked out as you type (type your own to override it), extra payments on their own row with the extra as a % of the payment and lump sums as a % of the original mortgage. Margin: the interest calculator shows day, month and year in one row. Updates never offer versions before 2.18.0.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.19.0/InvestTracker.exe",
+        "sha256": "a1477b800ef24de6e5d9947a4c09669d487bf990079b17b0790d33946ef5c555",
+        "size": 20206187
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.19.0/invest-tracker-2.19.0.zip",
+        "sha256": "374f9dc57d3bfde72b3e13c70dfdd3b0327fde3e8e7b1f49036784c119518b34",
+        "size": 1213569
+      }
+    },
+    {
       "version": "2.18.0",
       "date": "2026-11-21",
       "changes": "New app icon (green mountains with a gold line to the summit) on the program, shortcuts, taskbar and window, and on the profile and PIN screens. Retirement: the margin loan's interest before retirement is added to the loan or paid from your pay (your choice); repaying the loan at retirement shows as a sale with its capital gain in the first year; a fall below the maintenance margin triggers a margin call (holdings sold to repay part of the loan) in the simple results and in Monte Carlo, which also shows how often margin calls happened; a warning when the loan costs more than the holdings earn. Retirement page: narrower input boxes, spending goals are the Fixed Goal policy, and the withdrawal strategy is chosen in the comparison card. Buttons look the same throughout the app. Privacy: the published source zip holds only the program (no tests, sample files or tools), every release is checked for personal data before it is published, and updates delete data files that older source updates left behind.",
