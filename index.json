@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.23.0",
+      "date": "2026-11-22",
+      "changes": "Daily checks run at the same time in groups (latest prices then price history in order, the backup last), and up to 6 funds are looked up at once, so start-up checks finish sooner. Cost base: a transfer between two registered accounts never asks for a price (no tax applies); each item that needs your input now shows the account, the fund or cash, the amount and the row's note, with a link to that row on the Transactions page; a transfer whose symbol is only spaces or invisible characters counts as cash. Market & Reference Data: Fund allocations list only what you hold now, and the beta values moved there from the Prices table.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.23.0/InvestTracker.exe",
+        "sha256": "c2d839713ca8fde7805c05478163d34a66d73a070b3add2eec39413affde2354",
+        "size": 20233063
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.23.0/invest-tracker-2.23.0.zip",
+        "sha256": "4d29d1c550eecf1f6d503e47d374dc2637741f532e883acd538f57bf8279d7ff",
+        "size": 1227138
+      }
+    },
+    {
       "version": "2.22.0",
       "date": "2026-11-22",
       "changes": "Import: Questrade monthly statements from 2019 (which space their words differently) are now read, including withdrawals; a statement for a month with no activity says so instead of \"Empty file\", and its month-end holdings are still used to check your other files; those holdings checks now run once when every file of an import is in, so the order of the files no longer gives false warnings. Fixed: Cancel on the import preview could show \"Method Not Allowed\". Prices: the last trade price shows faintly in an empty price box (that is the price used), funds you no longer hold are listed separately under the table, and Canadian mutual fund codes such as TDB902 are looked up through Yahoo's search to find their live price. Daily checks: Run again now counts up from 0 instead of starting at 9 of 9 from the earlier run.",
