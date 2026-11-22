@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.3",
+      "date": "2026-11-22",
+      "changes": "Fixed chart totals, date selection and Start menu launch; tidied Overview and Tax Tables.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.3/InvestTracker.exe",
+        "sha256": "d0750f2ac36b5b57af511257eef68225b422909fbe9146b8dcb87408ae67cda5",
+        "size": 20233812
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.3/invest-tracker-1.0.3.zip",
+        "sha256": "e650bedb9c6a0b758889db109d4351e1170ee755f0c28975b9d664237a7cf44f",
+        "size": 1208952
+      }
+    },
+    {
       "version": "1.0.2",
       "date": "2026-11-22",
       "changes": "Updated page layouts and user interaction points.",
