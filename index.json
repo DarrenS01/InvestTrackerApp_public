@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.2",
+      "date": "2026-11-22",
+      "changes": "Updated page layouts and user interaction points.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.2/InvestTracker.exe",
+        "sha256": "b3b02f7ad195117fc82c9ed31f9f877ca59eb4729cd753b771d6c48845184230",
+        "size": 20230664
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.2/invest-tracker-1.0.2.zip",
+        "sha256": "f2202030e3fe6e348d93b5aeb039ef918a85b9e1a0ece2165db4133980fa2972",
+        "size": 1207005
+      }
+    },
+    {
       "version": "1.0.1",
       "date": "2026-11-22",
       "changes": "Improved Questrade statement reading and import messages.",
