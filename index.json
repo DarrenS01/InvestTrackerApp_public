@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "2.22.0",
+      "date": "2026-11-22",
+      "changes": "Import: Questrade monthly statements from 2019 (which space their words differently) are now read, including withdrawals; a statement for a month with no activity says so instead of \"Empty file\", and its month-end holdings are still used to check your other files; those holdings checks now run once when every file of an import is in, so the order of the files no longer gives false warnings. Fixed: Cancel on the import preview could show \"Method Not Allowed\". Prices: the last trade price shows faintly in an empty price box (that is the price used), funds you no longer hold are listed separately under the table, and Canadian mutual fund codes such as TDB902 are looked up through Yahoo's search to find their live price. Daily checks: Run again now counts up from 0 instead of starting at 9 of 9 from the earlier run.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.22.0/InvestTracker.exe",
+        "sha256": "fa4ff7bf13d8c4b687232c9b3d65e49cee10a4f80c4055b42be580f8c2e7f55f",
+        "size": 20224681
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.22.0/invest-tracker-2.22.0.zip",
+        "sha256": "ca689b1451740390a965b10a09a42fac8a07e7561c557397e7423dc8deeae297",
+        "size": 1223587
+      }
+    },
+    {
       "version": "2.21.0",
       "date": "2026-11-21",
       "changes": "Fixed: importing TD Mutual Funds statements for a second account put everything in one account and renamed it (and could pick an account you made by hand); each statement now goes to its own account, and a one-time repair moves rows filed by 2.19 or 2.20 back to the right accounts. TD holdings with shortened fund names now match their funds. Fixed: opening Summit right after closing it could hang (the last window's helpers were still finishing); it now waits for them, ends leftovers or uses a spare window folder. A file that can't be read is reported instead of stopping the import, misprinted dates are skipped, and absurd numbers typed in forms are ignored.",
