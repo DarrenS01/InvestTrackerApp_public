@@ -1,93 +1,18 @@
 {
   "versions": [
     {
-      "version": "2.23.0",
+      "version": "1.0.0",
       "date": "2026-11-22",
-      "changes": "Daily checks run at the same time in groups (latest prices then price history in order, the backup last), and up to 6 funds are looked up at once, so start-up checks finish sooner. Cost base: a transfer between two registered accounts never asks for a price (no tax applies); each item that needs your input now shows the account, the fund or cash, the amount and the row's note, with a link to that row on the Transactions page; a transfer whose symbol is only spaces or invisible characters counts as cash. Market & Reference Data: Fund allocations list only what you hold now, and the beta values moved there from the Prices table.",
+      "changes": "First release under the new numbering. Incorporated more bank document integrations; updated page layouts and user interaction points.",
       "exe": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.23.0/InvestTracker.exe",
-        "sha256": "c2d839713ca8fde7805c05478163d34a66d73a070b3add2eec39413affde2354",
-        "size": 20233063
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.0/InvestTracker.exe",
+        "sha256": "2aaf050b28ac96e95fa65be55df91cf70788dfd1fe1f5fcdcb7d316cd77c501f",
+        "size": 20221823
       },
       "zip": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.23.0/invest-tracker-2.23.0.zip",
-        "sha256": "4d29d1c550eecf1f6d503e47d374dc2637741f532e883acd538f57bf8279d7ff",
-        "size": 1227138
-      }
-    },
-    {
-      "version": "2.22.0",
-      "date": "2026-11-22",
-      "changes": "Import: Questrade monthly statements from 2019 (which space their words differently) are now read, including withdrawals; a statement for a month with no activity says so instead of \"Empty file\", and its month-end holdings are still used to check your other files; those holdings checks now run once when every file of an import is in, so the order of the files no longer gives false warnings. Fixed: Cancel on the import preview could show \"Method Not Allowed\". Prices: the last trade price shows faintly in an empty price box (that is the price used), funds you no longer hold are listed separately under the table, and Canadian mutual fund codes such as TDB902 are looked up through Yahoo's search to find their live price. Daily checks: Run again now counts up from 0 instead of starting at 9 of 9 from the earlier run.",
-      "exe": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.22.0/InvestTracker.exe",
-        "sha256": "fa4ff7bf13d8c4b687232c9b3d65e49cee10a4f80c4055b42be580f8c2e7f55f",
-        "size": 20224681
-      },
-      "zip": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.22.0/invest-tracker-2.22.0.zip",
-        "sha256": "ca689b1451740390a965b10a09a42fac8a07e7561c557397e7423dc8deeae297",
-        "size": 1223587
-      }
-    },
-    {
-      "version": "2.21.0",
-      "date": "2026-11-21",
-      "changes": "Fixed: importing TD Mutual Funds statements for a second account put everything in one account and renamed it (and could pick an account you made by hand); each statement now goes to its own account, and a one-time repair moves rows filed by 2.19 or 2.20 back to the right accounts. TD holdings with shortened fund names now match their funds. Fixed: opening Summit right after closing it could hang (the last window's helpers were still finishing); it now waits for them, ends leftovers or uses a spare window folder. A file that can't be read is reported instead of stopping the import, misprinted dates are skipped, and absurd numbers typed in forms are ignored.",
-      "exe": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.21.0/InvestTracker.exe",
-        "sha256": "4115142dedff635eef453658935fa8cccdbfc9861bbe6cff7116faa5393ddd62",
-        "size": 20221662
-      },
-      "zip": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.21.0/invest-tracker-2.21.0.zip",
-        "sha256": "5c99dfd66c082d3e1c26e1a9ad5e57a21fef42ae6c11c25ca9df66c43c768b1c",
-        "size": 1221001
-      }
-    },
-    {
-      "version": "2.20.0",
-      "date": "2026-11-21",
-      "changes": "Monte Carlo runs several times faster with the same results: each year's withdrawal is found in about 5 tax calculations instead of 26, tax already worked out is reused, and the market histories are split across every processor core but one (it falls back to one core if a computer blocks this). TD Mutual Funds statements in the older (2016) layout are read too; fund switches, redemptions and transfers between funds are imported, and an activity Summit doesn't know is reported instead of skipped.",
-      "exe": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.20.0/InvestTracker.exe",
-        "sha256": "3e9cc1570b195f3997779f763393b09966170bf8b038b667ed27b8e4d596588a",
-        "size": 20213041
-      },
-      "zip": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.20.0/invest-tracker-2.20.0.zip",
-        "sha256": "3b909ba7d2ab63d3655978e16bb32b6edf8f4b280b7aa1ecfcaeeb535f267662",
-        "size": 1216955
-      }
-    },
-    {
-      "version": "2.19.0",
-      "date": "2026-11-21",
-      "changes": "TD Mutual Funds quarterly statements (PDF) import as the account's history: contributions, fund purchases and reinvested distributions with their real dates (so the 60-day RRSP rule applies by date), the units held before the first statement taken from its holdings, and no duplicates whatever order you import them; they are no longer read as RRSP receipts. RRSP receipts for the same amount on different dates are no longer treated as duplicates. Retirement: the input cards open one at a time from a row of titles; the margin loan is a row in Today's balances (My Account Values fills it too); Enforce RRIF minimums sits in the RRSP row; CPP, OAS and other income side by side. Mortgage: the regular payment is worked out as you type (type your own to override it), extra payments on their own row with the extra as a % of the payment and lump sums as a % of the original mortgage. Margin: the interest calculator shows day, month and year in one row. Updates never offer versions before 2.18.0.",
-      "exe": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.19.0/InvestTracker.exe",
-        "sha256": "a1477b800ef24de6e5d9947a4c09669d487bf990079b17b0790d33946ef5c555",
-        "size": 20206187
-      },
-      "zip": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.19.0/invest-tracker-2.19.0.zip",
-        "sha256": "374f9dc57d3bfde72b3e13c70dfdd3b0327fde3e8e7b1f49036784c119518b34",
-        "size": 1213569
-      }
-    },
-    {
-      "version": "2.18.0",
-      "date": "2026-11-21",
-      "changes": "New app icon (green mountains with a gold line to the summit) on the program, shortcuts, taskbar and window, and on the profile and PIN screens. Retirement: the margin loan's interest before retirement is added to the loan or paid from your pay (your choice); repaying the loan at retirement shows as a sale with its capital gain in the first year; a fall below the maintenance margin triggers a margin call (holdings sold to repay part of the loan) in the simple results and in Monte Carlo, which also shows how often margin calls happened; a warning when the loan costs more than the holdings earn. Retirement page: narrower input boxes, spending goals are the Fixed Goal policy, and the withdrawal strategy is chosen in the comparison card. Buttons look the same throughout the app. Privacy: the published source zip holds only the program (no tests, sample files or tools), every release is checked for personal data before it is published, and updates delete data files that older source updates left behind.",
-      "exe": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.18.0/InvestTracker.exe",
-        "sha256": "787922dfb5a57189ee5ba05610eefbdf97ce6563c5d622cbe16eda50dd4216c2",
-        "size": 20193667
-      },
-      "zip": {
-        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v2.18.0/invest-tracker-2.18.0.zip",
-        "sha256": "f25fd1ec092129df697892e806668d7a49e44a9c92c71ebcbadf1dde449fd53a",
-        "size": 1206680
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.0/invest-tracker-1.0.0.zip",
+        "sha256": "1e231ae036953d7b3b6af4aab8a068508bdc03bf807a13ab865cde8a1673d728",
+        "size": 1201652
       }
     }
   ]
