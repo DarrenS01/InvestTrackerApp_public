@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.1",
+      "date": "2026-11-22",
+      "changes": "Improved Questrade statement reading and import messages.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.1/InvestTracker.exe",
+        "sha256": "e0270609a5e9a82cc12322c404ff1888cc72426121d1eff18e08d9c3ece27498",
+        "size": 20224421
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.1/invest-tracker-1.0.1.zip",
+        "sha256": "bb5abe28884b6d15df98b6a351231a54cd1d9b9d5fdc179e404e5ff8764f14c9",
+        "size": 1202135
+      }
+    },
+    {
       "version": "1.0.0",
       "date": "2026-11-22",
       "changes": "First release under the new numbering. Incorporated more bank document integrations; updated page layouts and user interaction points.",
