@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.5",
+      "date": "2026-11-23",
+      "changes": "Monte Carlo: 90% figure for floor-and-ceiling spending, and the out-of-date badge after a run.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.5/InvestTracker.exe",
+        "sha256": "0f54a25d87b32a65003a3d9f7930062cd47204cc0576a0f2dab55550bdcb32c0",
+        "size": 20238240
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.5/invest-tracker-1.0.5.zip",
+        "sha256": "ae67a224380a1eb0f249466a4c073c8f79574f69d4b14eecc0b1e758fb93aee6",
+        "size": 1211178
+      }
+    },
+    {
       "version": "1.0.4",
       "date": "2026-11-23",
       "changes": "Monte Carlo: spending that reaches 90% success, historic or account-card returns option, simulated-markets wording, run fixes.",
