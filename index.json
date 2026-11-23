@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.4",
+      "date": "2026-11-23",
+      "changes": "Monte Carlo: spending that reaches 90% success, historic or account-card returns option, simulated-markets wording, run fixes.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.4/InvestTracker.exe",
+        "sha256": "5b63c99e6a472397a51300693e602aa61703f3f105f1a903bed9bad69bb7b547",
+        "size": 20237404
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.4/invest-tracker-1.0.4.zip",
+        "sha256": "fbf8976152b1c848f4e7fa382232a075290d95f9ddab9129764c09591f127b64",
+        "size": 1210739
+      }
+    },
+    {
       "version": "1.0.3",
       "date": "2026-11-22",
       "changes": "Fixed chart totals, date selection and Start menu launch; tidied Overview and Tax Tables.",
