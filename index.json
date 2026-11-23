@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.6",
+      "date": "2026-11-23",
+      "changes": "Monte Carlo: money-lasted rate, clearer floor and guardrail wording, no false out-of-date badge; closed accounts no longer counted in balances or asset mix.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.6/InvestTracker.exe",
+        "sha256": "940c528a53836f93fa2984576db5be099c824d349d0a4df9869cc14c8cd03888",
+        "size": 20237115
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.6/invest-tracker-1.0.6.zip",
+        "sha256": "8eda2d481a4cdb0b9d50c4305fb90c29385b2ac47279da05c432919d4d730538",
+        "size": 1211694
+      }
+    },
+    {
       "version": "1.0.5",
       "date": "2026-11-23",
       "changes": "Monte Carlo: 90% figure for floor-and-ceiling spending, and the out-of-date badge after a run.",
