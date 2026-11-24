@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.9",
+      "date": "2026-11-24",
+      "changes": "Returns: 30D, 90D and 6M; transfers and closed accounts no longer show as gains or losses; no figure where there are no prices. TD fund switches import as sales and buys; flag for two transfers in of the same money.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.9/InvestTracker.exe",
+        "sha256": "829f4be0f83a211eb0bcd68324525070b4823eaefd16d15be89ea3ce62f6666a",
+        "size": 20264729
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.9/invest-tracker-1.0.9.zip",
+        "sha256": "9e44ba2c9ca8f2ce15c0a65f3e4c147f033586dab1d6808b30a2dbe3a303e776",
+        "size": 1223426
+      }
+    },
+    {
       "version": "1.0.8",
       "date": "2026-11-24",
       "changes": "Overview: Returns card (IRR by account type and account, periods or by year); privacy mode hides dollar amounts on Overview and Accounts; Notices of Assessment shown as from the CRA.",
