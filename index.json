@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.8",
+      "date": "2026-11-24",
+      "changes": "Overview: Returns card (IRR by account type and account, periods or by year); privacy mode hides dollar amounts on Overview and Accounts; Notices of Assessment shown as from the CRA.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.8/InvestTracker.exe",
+        "sha256": "6ae6788a3ef9b0d20335f0526dcad74a3ffb0d95f2f0f1c464c7526f0f8d586e",
+        "size": 20258177
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.8/invest-tracker-1.0.8.zip",
+        "sha256": "7b2bddb2a185f888f14ade35c70e655ad05c23c8bee469f5b5aa53ee055c55bc",
+        "size": 1220666
+      }
+    },
+    {
       "version": "1.0.7",
       "date": "2026-11-24",
       "changes": "T3 return of capital and non-cash entries without duplicates; same 90% floor for the same plan; no out-of-date badge from price moves; short scenario names; PIN unlocks at the 4th digit.",
