@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.12",
+      "date": "2026-11-24",
+      "changes": "Help: a ? on every page and Settings panel, a one-time walk-through and a Retirement page tour; Menu > Report a problem (anonymous); change the type of several transactions at once; background checks every 3 hours while open.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.12/InvestTracker.exe",
+        "sha256": "8d89f2370642dbcb1b0e6c178acd871f7cdea9ec7449a89e4cf55b58e82807eb",
+        "size": 20278847
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.12/invest-tracker-1.0.12.zip",
+        "sha256": "7fdc771d2672d9ad4dfc8fd7e29cb3fb66b66435a66f8839f073bb51f8a5b8c5",
+        "size": 1234076
+      }
+    },
+    {
       "version": "1.0.11",
       "date": "2026-11-24",
       "changes": "Transactions: buys and sells show units × price in the Amount column.",
