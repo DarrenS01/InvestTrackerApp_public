@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.7",
+      "date": "2026-11-24",
+      "changes": "T3 return of capital and non-cash entries without duplicates; same 90% floor for the same plan; no out-of-date badge from price moves; short scenario names; PIN unlocks at the 4th digit.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.7/InvestTracker.exe",
+        "sha256": "f23d24a8b8e21a5b338a98f37231f7c5f245188f42ea9c43e132d609ed4c0fef",
+        "size": 20250129
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.7/invest-tracker-1.0.7.zip",
+        "sha256": "b202dadb08f4f9c7b8d2f24238ebd4a9a9458d115f546263e20fe32bc6f6bed9",
+        "size": 1216043
+      }
+    },
+    {
       "version": "1.0.6",
       "date": "2026-11-23",
       "changes": "Monte Carlo: money-lasted rate, clearer floor and guardrail wording, no false out-of-date badge; closed accounts no longer counted in balances or asset mix.",
