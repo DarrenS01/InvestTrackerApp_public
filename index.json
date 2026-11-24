@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.13",
+      "date": "2026-11-24",
+      "changes": "The walk-through and every ? box link the guide to which file to download from your bank or broker.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.13/InvestTracker.exe",
+        "sha256": "ae6b76c6ff5dc01a8539daa0124454b92075eb934b7830e109155721abf7224f",
+        "size": 20279930
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.13/invest-tracker-1.0.13.zip",
+        "sha256": "647a39ecae7fcac8e6dfe63f685a517d99028ad837e4033adf8a3a8ce6160b6a",
+        "size": 1234250
+      }
+    },
+    {
       "version": "1.0.12",
       "date": "2026-11-24",
       "changes": "Help: a ? on every page and Settings panel, a one-time walk-through and a Retirement page tour; Menu > Report a problem (anonymous); change the type of several transactions at once; background checks every 3 hours while open.",
