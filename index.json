@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.15",
+      "date": "2026-11-25",
+      "changes": "Input boxes on every page sized to the largest value they take and the same width across a page; bug reports keep links and code out of the note.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.15/InvestTracker.exe",
+        "sha256": "e929a9ba36950b3b3f26cd0792e43dab6dd4856d7f76d8598234152354b05a83",
+        "size": 20302694
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.15/invest-tracker-1.0.15.zip",
+        "sha256": "5dbc909bfe937447aaec6846df54c71d244db6ca0333886c2eafc435eed1630d",
+        "size": 1245768
+      }
+    },
+    {
       "version": "1.0.14",
       "date": "2026-11-25",
       "changes": "Margin: return on borrowed money after interest, tax saved and inflation, with a real return chart by year; Taxes > Slips lists every slip and box (edit, delete, missing); every box and code on a slip is kept; T4 and pension slips give your income.",
