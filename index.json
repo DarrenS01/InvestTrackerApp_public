@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.14",
+      "date": "2026-11-25",
+      "changes": "Margin: return on borrowed money after interest, tax saved and inflation, with a real return chart by year; Taxes > Slips lists every slip and box (edit, delete, missing); every box and code on a slip is kept; T4 and pension slips give your income.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.14/InvestTracker.exe",
+        "sha256": "d68fa83c3835d9fcf6219f5976e420a59f70a42d4bf3ce5582eefcd2afedaa32",
+        "size": 20302444
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.14/invest-tracker-1.0.14.zip",
+        "sha256": "088e78fced4312e2111614b4be24eaa4a5d8cb97f5f32d985bbdce7868112251",
+        "size": 1245933
+      }
+    },
+    {
       "version": "1.0.13",
       "date": "2026-11-24",
       "changes": "The walk-through and every ? box link the guide to which file to download from your bank or broker.",
