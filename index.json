@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.16",
+      "date": "2026-11-28",
+      "changes": "Imports no longer lock other pages out (a busy message instead of a server error); a failed page shows Try again and Send report; a T4 read only in part is matched to the one already saved; Taxes: ignore a check message per year; interest income from slips only, not transactions; T4s on the CRA fill-in form (box labels drawn) are read box by box, older ones with dollars and cents apart too; PDFs with a leftover page list read every page; a password-protected PDF says so.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.16/InvestTracker.exe",
+        "sha256": "4a7435a63d1338b1aafed533a4bb2edf47debaf3ce09561190aa7afd5989c3d3",
+        "size": 20331273
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.16/invest-tracker-1.0.16.zip",
+        "sha256": "344e44136963d2c108f33b89f5d6c31bc7ad5c0e902a003143e913605a84c9c4",
+        "size": 1250721
+      }
+    },
+    {
       "version": "1.0.15",
       "date": "2026-11-25",
       "changes": "Input boxes on every page sized to the largest value they take and the same width across a page; bug reports keep links and code out of the note.",
