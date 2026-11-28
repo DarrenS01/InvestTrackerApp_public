@@ -1,0 +1,14 @@
+{
+ "versions": [
+  {
+   "version": "1.0.19.3",
+   "date": "2026-11-28",
+   "changes": "Summit Experimental: red icon, its own install and Start menu entry, updates itself from the experimental branch's builds",
+   "exe": {
+    "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/experimental/SummitExperimental.exe",
+    "sha256": "3ccb9f16892f3ef98ed27120dfb2a6d7633d9c3ef9b07b6be86862fe8302a0f8",
+    "size": 19780125
+   }
+  }
+ ]
+}
