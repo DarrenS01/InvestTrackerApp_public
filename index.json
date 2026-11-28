@@ -1,6 +1,21 @@
 {
   "versions": [
     {
+      "version": "1.0.18",
+      "date": "2026-11-28",
+      "changes": "Transactions: Net deposits counts only what you deposited or withdrew; cash transferred in from another institution (a pension, an RRSP moved over) shows on its own line.",
+      "exe": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.18/InvestTracker.exe",
+        "sha256": "119bf919f0c6012fdebb4bd03025d3ec8c58e68f20027d0cde0d417c5944163d",
+        "size": 20346487
+      },
+      "zip": {
+        "url": "https://github.com/DarrenS01/InvestTrackerApp_public/releases/download/v1.0.18/invest-tracker-1.0.18.zip",
+        "sha256": "1e20543a757b81aaeb318182103d80353fcbd0cffeb6a6301ba773d100c4b9b2",
+        "size": 1258632
+      }
+    },
+    {
       "version": "1.0.17",
       "date": "2026-11-28",
       "changes": "Transactions: Investments tab shows deposits, dividends and interest with a 3M to All chart; Wealthsimple's two exports no longer show the same transactions as new; Taxes: Ignore on every Check these before filing message, and a typed or ignored RRSP mismatch no longer warns; Margin: this year's real return is actual so far (striped bar) and Borrowed only is traced day by day; Returns: trades saved without a price use their amount (old fund switches), joined group figures are dotted; Accounts: closed accounts in a collapsible section.",
